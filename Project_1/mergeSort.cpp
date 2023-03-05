@@ -28,7 +28,6 @@ void mergeArrays(int v[], int left, int m, int right) {
     k = 1;
     for (i = left; i <= right; i++)
         v[i] = c[k++];
-
     delete[] c;
 }
 

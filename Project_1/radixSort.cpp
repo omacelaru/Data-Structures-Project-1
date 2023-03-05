@@ -1,6 +1,8 @@
 //
 // Created by macelaru on 05.03.2023.
 //
+#include <iostream>
+
 int getMax(int v[], int n) {
     int Max = v[0];
     for (int i = 1; i < n; i++)
@@ -24,7 +26,7 @@ void countSort(int v[], int n, int c) {
     }
     for (i = 0; i < n; i++)
         v[i] = sol[i];
-
+    std::cout << "aici"<<std::endl;
     delete[] sol;
 }
 
