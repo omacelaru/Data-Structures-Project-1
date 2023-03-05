@@ -1,7 +1,6 @@
 //
 // Created by macelaru on 05.03.2023.
 //
-
 int getMax(int v[], int n) {
     int Max = v[0];
     for (int i = 1; i < n; i++)
