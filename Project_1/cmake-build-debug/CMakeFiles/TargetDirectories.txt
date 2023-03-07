@@ -1,3 +1,0 @@
-/home/macelaru/Documents/GitHub/DS/Project_1/cmake-build-debug/CMakeFiles/Project_1.dir
-/home/macelaru/Documents/GitHub/DS/Project_1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/macelaru/Documents/GitHub/DS/Project_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
