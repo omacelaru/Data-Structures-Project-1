@@ -5,30 +5,43 @@
 #include "mergeSort.h"
 
 void mergeArrays(int v[], int left, int m, int right) {
-    int *c, k = 1, i = left, j = m + 1;
-    c = new int[right];
-    while (i <= m && j <= right) {
-        if (v[i] < v[j]) {
-            c[k++] = v[i];
+    int i, j, k;
+    int nl = m - left + 1;
+    int nr = right - m;
+
+    int *L = new int[nl];
+    int *R = new int[nr];
+
+    for (i = 0; i < nl; i++)
+        L[i] = v[left + i];
+    for (j = 0; j < nr; j++)
+        R[j] = v[m + 1 + j];
+
+    i = 0;
+    j = 0;
+    k = left;
+    while (i < nl && j < nr) {
+        if (L[i] <= R[j]) {
+            v[k] = L[i];
             i++;
         } else {
-            c[k++] = v[j];
+            v[k] = R[j];
             j++;
         }
-    }
-    while (i <= m) {
-        c[k++] = v[i];
-        i++;
-    }
-    while (j <= right) {
-        c[k++] = v[j];
-        j++;
+        k++;
     }
 
-    k = 1;
-    for (i = left; i <= right; i++)
-        v[i] = c[k++];
-    delete[] c;
+    while (i < nl) {
+        v[k++] = L[i];
+        i++;
+    }
+
+    while (j < nr) {
+        v[k++] = R[j];
+        j++;
+    }
+    delete[] L;
+    delete[] R;
 }
 
 void mergeSort(int v[], int left, int right) {

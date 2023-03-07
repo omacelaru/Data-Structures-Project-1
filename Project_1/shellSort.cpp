@@ -6,7 +6,7 @@ void shellSort(int v[], int n) {
         for (int i = itv; i < n; i += 1) {
             int aux = v[i];
             int j;
-            for (j = i; j >= itv ; j -= itv) {
+            for (j = i; j >= itv; j -= itv) {
                 if (v[j - itv] <= aux)
                     break;
                 v[j] = v[j - itv];

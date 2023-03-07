@@ -9,25 +9,26 @@ int getMax(int v[], int n) {
         if (Max < v[i])
             Max = v[i];
     return Max;
-
 }
 
 void countSort(int v[], int n, int c) {
-    int *sol, count[10] = {0}, i;
-    sol = new int[n];
+    int *output = new int[n + 1];
+    int count[10] = {0};
 
-    for (i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
         count[(v[i] / c) % 10]++;
-    for (i = 1; i < n; i++)
+
+    for (int i = 1; i < 10; i++)
         count[i] += count[i - 1];
-    for (i = n - 1; i >= 0; i--) {
-        sol[count[(v[i] / c) % 10] - 1] = v[i];
+
+    for (int i = n - 1; i >= 0; i--) {
+        output[count[(v[i] / c) % 10] - 1] = v[i];
         count[(v[i] / c) % 10]--;
     }
-    for (i = 0; i < n; i++)
-        v[i] = sol[i];
-    std::cout << "aici"<<std::endl;
-    delete[] sol;
+
+    for (int i = 0; i < n; i++)
+        v[i] = output[i];
+    delete[] output;
 }
 
 void radixSort(int v[], int n) {

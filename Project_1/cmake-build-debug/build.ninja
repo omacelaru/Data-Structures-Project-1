@@ -73,6 +73,18 @@ build CMakeFiles/Project_1.dir/shellSort.cpp.o: CXX_COMPILER__Project_1_Debug /h
   OBJECT_DIR = CMakeFiles/Project_1.dir
   OBJECT_FILE_DIR = CMakeFiles/Project_1.dir
 
+build CMakeFiles/Project_1.dir/heapSort1.cpp.o: CXX_COMPILER__Project_1_Debug /home/macelaru/Documents/GitHub/DS/Project_1/heapSort1.cpp || cmake_object_order_depends_target_Project_1
+  DEP_FILE = CMakeFiles/Project_1.dir/heapSort1.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/Project_1.dir
+  OBJECT_FILE_DIR = CMakeFiles/Project_1.dir
+
+build CMakeFiles/Project_1.dir/countingSort.cpp.o: CXX_COMPILER__Project_1_Debug /home/macelaru/Documents/GitHub/DS/Project_1/countingSort.cpp || cmake_object_order_depends_target_Project_1
+  DEP_FILE = CMakeFiles/Project_1.dir/countingSort.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/Project_1.dir
+  OBJECT_FILE_DIR = CMakeFiles/Project_1.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Project_1
@@ -81,7 +93,7 @@ build CMakeFiles/Project_1.dir/shellSort.cpp.o: CXX_COMPILER__Project_1_Debug /h
 #############################################
 # Link the executable Project_1
 
-build Project_1: CXX_EXECUTABLE_LINKER__Project_1_Debug CMakeFiles/Project_1.dir/main.cpp.o CMakeFiles/Project_1.dir/mergeSort.cpp.o CMakeFiles/Project_1.dir/radixSort.cpp.o CMakeFiles/Project_1.dir/shellSort.cpp.o
+build Project_1: CXX_EXECUTABLE_LINKER__Project_1_Debug CMakeFiles/Project_1.dir/main.cpp.o CMakeFiles/Project_1.dir/mergeSort.cpp.o CMakeFiles/Project_1.dir/radixSort.cpp.o CMakeFiles/Project_1.dir/shellSort.cpp.o CMakeFiles/Project_1.dir/heapSort1.cpp.o CMakeFiles/Project_1.dir/countingSort.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Project_1.dir
   POST_BUILD = :
