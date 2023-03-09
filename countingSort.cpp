@@ -21,5 +21,6 @@ void countingSort(int v[], int n, int Max) {
     }
     for (int i = 0; i < n; i++)
         v[i] = output[i];
+    delete[] count;
     delete[] output;
 }
